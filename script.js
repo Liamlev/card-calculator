@@ -68,4 +68,3 @@ document.querySelector(".try-again-btn").addEventListener("click", function () {
   document.getElementById("result-section").classList.add("hidden");
   document.getElementById("number").value = "";
 });
-}
