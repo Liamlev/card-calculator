@@ -19,8 +19,13 @@ function calculateProbability(chosenCard, chosenNumber) {
   const actualPosition = mnemonicaStack[chosenCard];
 
   // Calculate forward and backward differences
-  const forwardDifference = (chosenNumber - actualPosition + 52) % 52;
-  const backwardDifference = (actualPosition - chosenNumber + 52) % 52;
+const forwardDifference = (chosenNumber >= actualPosition)
+  ? chosenNumber - actualPosition
+  : chosenNumber - actualPosition + 52;
+
+const backwardDifference = (chosenNumber <= actualPosition)
+  ? actualPosition - chosenNumber
+  : actualPosition - chosenNumber + 52;
 
   // Choose the shortest path
   let difference, direction;
