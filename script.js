@@ -23,9 +23,9 @@ function calculateTargetAndPercentage(actualPosition, chosenNumber) {
 
   let percentage;
   if (target === 0) {
-    percentage = `0.00${Math.floor(Math.random() * 900) + 100}`;
+    percentage = `0.0${Math.floor(Math.random() * 900) + 100}`;
   } else if (target < 5 || target > 47) {
-    percentage = `0.${String(target).padStart(2, "0")}${Math.floor(Math.random() * 900) + 100}`;
+    percentage = `0.${String(target).padStart(2)}${Math.floor(Math.random() * 900) + 100}`;
   } else {
     const firstDigit = Math.floor(Math.random() * 4) + 1;
     percentage = `${firstDigit}.${String(target).padStart(2, "0")}${Math.floor(Math.random() * 900) + 100}`;
