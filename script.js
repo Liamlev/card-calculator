@@ -14,7 +14,7 @@ const mnemonicaStack = {
 function calculateTargetAndPercentage(actualPosition, chosenNumber) {
   let target;
   if (actualPosition === chosenNumber) {
-    target = 0;
+    target = 00;
   } else if (actualPosition > chosenNumber) {
     target = actualPosition - chosenNumber;
   } else {
