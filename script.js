@@ -30,7 +30,7 @@ function calculateTargetAndPercentage(actualPosition, chosenNumber) {
     percentage = `1.${String(target).padStart(2, "0")}${Math.floor(Math.random() * 900) + 100}`;
   } else if (target >= 11 && target <= 25) {
     percentage = `2.${String(target).padStart(2, "0")}${Math.floor(Math.random() * 900) + 100}`;
-  } else if (target >= 26 && target <= 46) {
+  } else if (target >= 26 && target <= 47) {
     percentage = `3.${String(target).padStart(2, "0")}${Math.floor(Math.random() * 900) + 100}`;
   }
 
